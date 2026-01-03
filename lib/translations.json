@@ -1,0 +1,184 @@
+{
+  "en": {
+    "nav": {
+      "about": "About",
+      "projects": "Projects",
+      "research": "Research",
+      "contact": "Contact"
+    },
+    "hero": {
+      "portfolio": "Portfolio",
+      "title": "3, 2, 1, let's jam",
+      "subtitle": "YAEL DEMERS",
+      "role": "Software Developer & Researcher",
+      "clickToReset": "(click to reset)",
+      "scroll": "Scroll"
+    },
+    "about": {
+      "comment": "// about me",
+      "name": "Yael Demers",
+      "role": "Software Developer & Researcher",
+      "bio1": "I'm a software developer and researcher specializing in building exceptional digital experiences. Currently focused on creating accessible, human-centered products at the intersection of design and engineering.",
+      "bio2": "When I'm not coding, you'll find me exploring machine learning research, contributing to open-source projects, or diving into papers that push the boundaries of what's possible.",
+      "education": "Education",
+      "educationValue": "Computer Science",
+      "focus": "Focus",
+      "focusValue": "Full-Stack & ML",
+      "status": "Status",
+      "statusValue": "Building"
+    },
+    "projects": {
+      "section": "02",
+      "title": "Featured Project",
+      "comment": "// some projects I've worked on lately",
+      "code": "Code",
+      "demo": "Demo",
+      "otherProjects": "Other projects",
+      "featured": {
+        "title": "Neural Network Visualizer",
+        "description": "Interactive web application for visualizing neural network architectures and training processes in real-time. Built with a focus on educational value and performance optimization.",
+        "status": "Deployed",
+        "year": "2024"
+      },
+      "other": [
+        {
+          "title": "Distributed Task Scheduler",
+          "year": "0000"
+        },
+        {
+          "title": "Real-time Collaboration Platform",
+          "year": "0000"
+        }
+      ]
+    },
+    "research": {
+      "section": "03",
+      "title": "Research",
+      "comment": "// exploring ideas at the frontier",
+      "readPaper": "Read paper",
+      "papers": [
+        {
+          "title": "Efficient Attention Mechanisms for Long-Context Language Models",
+          "abstract": "Exploring novel attention patterns that reduce computational complexity while maintaining performance on downstream tasks. This work proposes a hierarchical attention scheme that scales linearly with sequence length.",
+          "status": "In Progress",
+          "year": "2024"
+        },
+        {
+          "title": "Federated Learning with Differential Privacy Guarantees",
+          "abstract": "A framework for training machine learning models on distributed data while providing formal privacy guarantees. Demonstrates practical applications in healthcare and financial domains.",
+          "status": "Published",
+          "year": "2023"
+        }
+      ]
+    },
+    "contact": {
+      "section": "04",
+      "title": "Get in Touch",
+      "comment": "// usually answers within 24h",
+      "available": "Available",
+      "openTo": "Open to opportunities",
+      "sendEmail": "Send Email",
+      "description": "Have a project in mind or want to collaborate? I'm always open to discussing new opportunities and ideas.",
+      "location": "Canada",
+      "remote": "Remote Friendly"
+    },
+    "footer": {
+      "connect": "CONNECT",
+      "github": "GitHub",
+      "linkedin": "LinkedIn",
+      "backToTop": "Back to top",
+      "credit": "Designed & built by Yael Demers"
+    }
+  },
+  "fr": {
+    "nav": {
+      "about": "À propos",
+      "projects": "Projets",
+      "research": "Recherche",
+      "contact": "Contact"
+    },
+    "hero": {
+      "portfolio": "Portfolio",
+      "title": "3, 2, 1, let's jam",
+      "subtitle": "YAEL DEMERS",
+      "role": "Développeur logiciel & Chercheur",
+      "clickToReset": "(cliquer pour réinitialiser)",
+      "scroll": "Défiler"
+    },
+    "about": {
+      "comment": "// à propos de moi",
+      "name": "Yael Demers",
+      "role": "Développeur logiciel & Chercheur",
+      "bio1": "Je suis un développeur logiciel et chercheur spécialisé dans la création d'expériences numériques exceptionnelles. Actuellement concentré sur la création de produits accessibles et centrés sur l'humain à l'intersection du design et de l'ingénierie.",
+      "bio2": "Quand je ne code pas, vous me trouverez à explorer la recherche en apprentissage automatique, à contribuer à des projets open-source, ou à plonger dans des articles qui repoussent les limites du possible.",
+      "education": "Éducation",
+      "educationValue": "Informatique",
+      "focus": "Spécialisation",
+      "focusValue": "Full-Stack & ML",
+      "status": "Statut",
+      "statusValue": "Les mains dans le code"
+    },
+    "projects": {
+      "section": "02",
+      "title": "Projet vedette",
+      "comment": "// quelques projets sur lesquels j'ai travaillé",
+      "code": "Code",
+      "demo": "Démo",
+      "otherProjects": "Autres projets",
+      "featured": {
+        "title": "Visualiseur de Réseaux de Neurones",
+        "description": "Application web interactive pour visualiser les architectures de réseaux de neurones et les processus d'entraînement en temps réel. Conçu avec un accent sur la valeur éducative et l'optimisation des performances.",
+        "status": "Déployé",
+        "year": "2024"
+      },
+      "other": [
+        {
+          "title": "Planificateur de Tâches Distribué",
+          "year": "0000"
+        },
+        {
+          "title": "Plateforme de Collaboration en Temps Réel",
+          "year": "0000"
+        }
+      ]
+    },
+    "research": {
+      "section": "03",
+      "title": "Recherche",
+      "comment": "// explorer les idées à la frontière",
+      "readPaper": "Lire l'article",
+      "papers": [
+        {
+          "title": "Mécanismes d'Attention Efficaces pour Modèles de Langage à Long Contexte",
+          "abstract": "Exploration de nouveaux schémas d'attention qui réduisent la complexité computationnelle tout en maintenant les performances sur les tâches en aval. Ce travail propose un schéma d'attention hiérarchique qui évolue linéairement avec la longueur de la séquence.",
+          "status": "En cours",
+          "year": "2024"
+        },
+        {
+          "title": "Apprentissage Fédéré avec Garanties de Confidentialité Différentielle",
+          "abstract": "Un cadre pour l'entraînement de modèles d'apprentissage automatique sur des données distribuées tout en fournissant des garanties formelles de confidentialité. Démontre des applications pratiques dans les domaines de la santé et de la finance.",
+          "status": "Publié",
+          "year": "2023"
+        }
+      ]
+    },
+    "contact": {
+      "section": "04",
+      "title": "Me Contacter",
+      "comment": "// répond généralement sous 24h",
+      "available": "Disponible",
+      "openTo": "Ouvert aux opportunités",
+      "sendEmail": "Envoyer un courriel",
+      "description": "Vous avez un projet en tête ou souhaitez collaborer? Je suis toujours ouvert à discuter de nouvelles opportunités et idées.",
+      "location": "Canada",
+      "remote": "Télétravail OK"
+    },
+    "footer": {
+      "connect": "CONNECTER",
+      "github": "GitHub",
+      "linkedin": "LinkedIn",
+      "backToTop": "Retour en haut",
+      "credit": "Conçu et développé par Yael Demers"
+    }
+  }
+}
