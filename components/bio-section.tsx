@@ -99,11 +99,11 @@ export default function BioSection() {
                 <Image
                   src="/images/yael-demers-enda-technologies.jpg"
                   alt="Professional portrait of Yael Demers"
-                  fill
                   className="object-cover"
                   sizes="(min-width: 1024px) 192px, 160px"
                   quality={95}
                   priority
+                  fill
                 />
               </div>
             </div>
