@@ -1,7 +1,7 @@
 "use client"
 
 import { useEffect, useRef, useState } from "react"
-import { ExternalLink, BookOpen, Beaker } from "lucide-react"
+import { ExternalLink, BookOpen, Beaker, Github } from "lucide-react"
 import { useLanguage } from "@/lib/language-context"
 
 const paperIcons = [Beaker, BookOpen]
@@ -43,8 +43,19 @@ export default function ResearchProjects() {
   }
 
   const paperTags = [
-    ["NLP", "Transformers", "Efficiency"],
-    ["Privacy", "ML", "Distributed Systems"],
+    ["Cosmology", "Machine Learning", "Interpretable Systems"],
+    ["Quantum Computing", "Cryptography", "Adversarial Systems"],
+  ]
+
+  const paperLinks = [
+    {
+      github: "https://github.com/yaeldemers/RFI-Inpainting",
+      paper: null, // or a URL if you later have one
+    },
+    {
+      github: null,
+      paper: null,
+    },
   ]
 
   return (
@@ -119,16 +130,33 @@ export default function ResearchProjects() {
                         {paper.year}
                       </time>
                     </div>
-                    <a
-                      href="#"
-                      className="flex items-center gap-2 px-4 py-2 rounded-full border border-border 
-                        hover:border-retro-sky hover:bg-retro-sky/10 hover:text-retro-sky text-foreground/60 
-                        text-sm transition-all duration-300"
-                      aria-label={`Read paper: ${paper.title}`}
-                    >
-                      <span>{t.research.readPaper}</span>
-                      <ExternalLink size={14} aria-hidden="true" />
-                    </a>
+                      <div className="flex gap-3">
+                        {paperLinks[index]?.github && (
+                          <a
+                            href={paperLinks[index].github}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="flex items-center gap-2 px-4 py-2 rounded-full border border-border
+                              hover:border-retro-sky hover:bg-retro-sky/10 hover:text-retro-sky text-foreground/60
+                              text-sm transition-all duration-300"
+                            aria-label={`View source code for ${paper.title}`}
+                          >
+                            <Github size={16} aria-hidden="true" />
+                            <span>Code</span>
+                          </a>
+                        )}
+
+                        <a
+                          href="#contact"
+                          className="flex items-center gap-2 px-4 py-2 rounded-full border border-border 
+                            hover:border-retro-sky hover:bg-retro-sky/10 hover:text-retro-sky text-foreground/60 
+                            text-sm transition-all duration-300"
+                          aria-label={`Contact about: ${paper.title}`}
+                        >
+                          <span>{t.research.readPaper}</span>
+                          <ExternalLink size={14} aria-hidden="true" />
+                        </a>
+                      </div>
                   </div>
 
                   <h3
@@ -149,7 +177,7 @@ export default function ResearchProjects() {
                           isHovered ? "border-retro-sky/30 text-retro-sky/80" : "text-foreground/50"
                         }`}
                       >
-                        #{tag}
+                        {tag}
                       </li>
                     ))}
                   </ul>

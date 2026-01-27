@@ -59,7 +59,8 @@ export default function BioSection() {
               }`}
             >
               <p className="text-foreground/70 text-lg leading-relaxed mb-6">{t.about.bio1}</p>
-              <p className="text-foreground/70 text-lg leading-relaxed">{t.about.bio2}</p>
+              <p className="text-foreground/70 text-lg leading-relaxed mb-6">{t.about.bio2}</p>
+              <p className="text-foreground/70 text-lg leading-relaxed">{t.about.bio3}</p>
             </div>
 
             <dl

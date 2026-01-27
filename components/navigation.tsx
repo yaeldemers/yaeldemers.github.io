@@ -37,6 +37,7 @@ export default function Navigation() {
       { id: "about", label: t.nav.about },
       { id: "projects", label: t.nav.projects },
       { id: "research", label: t.nav.research },
+      { id: "consulting", label: t.nav.consulting },
       { id: "contact", label: t.nav.contact },
     ],
     [t],

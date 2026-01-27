@@ -4,26 +4,28 @@
       "about": "About",
       "projects": "Projects",
       "research": "Research",
+      "consulting": "Consulting",
       "contact": "Contact"
     },
     "hero": {
       "portfolio": "Portfolio",
-      "title": "3, 2, 1, let's jam",
+      "title": "Engineering trust under real constraints",
       "subtitle": "YAEL DEMERS",
-      "role": "Software Developer & Researcher",
+      "role": "Software dev & researcher",
       "clickToReset": "(click to reset)",
       "scroll": "Scroll"
     },
     "about": {
       "comment": "// about me",
       "name": "Yael Demers",
-      "role": "Software Developer & Researcher",
-      "bio1": "I'm a software developer and researcher specializing in building exceptional digital experiences. Currently focused on creating accessible, human-centered products at the intersection of design and engineering.",
-      "bio2": "When I'm not coding, you'll find me exploring machine learning research, contributing to open-source projects, or diving into papers that push the boundaries of what's possible.",
-      "education": "Education",
+      "role": "Developper & Researcher",
+      "bio1": "I work at the intersection of secure system design, regulatory compliance, and applied machine learning. My focus is on building and governing technologies that operate in high-stakes environments, where correctness, accountability, and trust matter.",
+      "bio2": "My background spans security leadership in healthtech, applied research in cryptography and machine learning, and hands-on software development. Across these domains, I’m interested in how complex systems can be made more interpretable, defensible, and responsibly deployable under real-world constraints.",
+      "bio3": "Outside of work, I write music, enjoy comic books and fashion. I am drawn to art in all its forms and love discovering the world through it.",
+      "education": "Background",
       "educationValue": "Computer Science",
       "focus": "Focus",
-      "focusValue": "Full-Stack & ML",
+      "focusValue": "ML, Security & Governance",
       "status": "Status",
       "statusValue": "Building"
     },
@@ -35,18 +37,18 @@
       "demo": "Demo",
       "otherProjects": "Other projects",
       "featured": {
-        "title": "Neural Network Visualizer",
-        "description": "Interactive web application for visualizing neural network architectures and training processes in real-time. Built with a focus on educational value and performance optimization.",
-        "status": "Deployed",
-        "year": "2024"
+        "title": "Enda Technologies — Health AI Platform",
+        "description": "AI-driven clinical tools operating in a regulated health environment. As CISO and cofounder, I lead security, privacy, and compliance strategy while contributing directly to backend and platform development. This work shapes my approach to engineering trust as a first-class system property.",
+        "status": "In production",
+        "year": "2025"
       },
       "other": [
         {
-          "title": "Distributed Task Scheduler",
+          "title": "Some project title #1",
           "year": "0000"
         },
         {
-          "title": "Real-time Collaboration Platform",
+          "title": "Some project title #2",
           "year": "0000"
         }
       ]
@@ -58,28 +60,44 @@
       "readPaper": "Read paper",
       "papers": [
         {
-          "title": "Efficient Attention Mechanisms for Long-Context Language Models",
-          "abstract": "Exploring novel attention patterns that reduce computational complexity while maintaining performance on downstream tasks. This work proposes a hierarchical attention scheme that scales linearly with sequence length.",
-          "status": "In Progress",
-          "year": "2024"
+          "title": "Symmetry-Aware Machine Learning for Scientific Measurement",
+          "abstract": "This research explored how encoding domain knowledge directly into model architecture can improve robustness and interpretability. A key takeaway was that structural constraints often matter more than scale when reliability is critical.",
+          "status": "Completed",
+          "year": "2023"
         },
         {
-          "title": "Federated Learning with Differential Privacy Guarantees",
-          "abstract": "A framework for training machine learning models on distributed data while providing formal privacy guarantees. Demonstrates practical applications in healthcare and financial domains.",
-          "status": "Published",
-          "year": "2023"
+          "title": "Relativistic Zero-Knowledge Protocol Analysis",
+          "abstract": "Focused on improving soundness guarantees in adversarial settings, this work highlighted the gap between formal security proofs and what remains meaningful once protocols face real-world constraints.",
+          "status": "Completed",
+          "year": "2022"
         }
       ]
     },
-    "contact": {
+    "consulting": {
       "section": "04",
+      "title": "Consulting",
+      "comment": "when you need an extra hand", 
+      "subtitle": "Compliance, Security, and AI Governance",
+      "intro": "I advise early-stage technology teams building products in regulated or high-risk domains, particularly in health and AI-driven systems.",
+      "focus": "My work focuses on helping teams build defensible foundations for privacy, security, and governance — without enterprise-level tooling or unnecessary overhead.",
+      "areasLabel": "Areas of focus include:",
+      "areas": [
+        "Privacy and data governance frameworks (Québec, Canada, U.S.)",
+        "Security and compliance foundations for health and AI startups",
+        "Policy design and operationalization",
+        "Risk analysis and transparency practices for AI systems"
+      ],
+      "disclaimer": "I do not provide legal advice. Legal review is handled in collaboration with qualified counsel when required."
+    },
+    "contact": {
+      "section": "05",
       "title": "Get in Touch",
       "comment": "// usually answers within 24h",
       "available": "Available",
-      "openTo": "Open to opportunities",
+      "openTo": "Collaboration & advisory",
       "sendEmail": "Send Email",
-      "description": "Have a project in mind or want to collaborate? I'm always open to discussing new opportunities and ideas.",
-      "location": "Canada",
+      "description": "If you’re working on systems where trust, risk, or governance matter, feel free to reach out.",
+      "location": "Montréal, Canada",
       "remote": "Remote Friendly"
     },
     "footer": {
@@ -95,28 +113,30 @@
       "about": "À propos",
       "projects": "Projets",
       "research": "Recherche",
+      "consulting": "Consultation",
       "contact": "Contact"
     },
     "hero": {
       "portfolio": "Portfolio",
-      "title": "3, 2, 1, let's jam",
+      "title": "Concevoir la confiance sous contraintes réelles",
       "subtitle": "YAEL DEMERS",
-      "role": "Développeur logiciel & Chercheur",
+      "role": "Développeur & Chercheur",
       "clickToReset": "(cliquer pour réinitialiser)",
       "scroll": "Défiler"
     },
     "about": {
       "comment": "// à propos de moi",
       "name": "Yael Demers",
-      "role": "Développeur logiciel & Chercheur",
-      "bio1": "Je suis un développeur logiciel et chercheur spécialisé dans la création d'expériences numériques exceptionnelles. Actuellement concentré sur la création de produits accessibles et centrés sur l'humain à l'intersection du design et de l'ingénierie.",
-      "bio2": "Quand je ne code pas, vous me trouverez à explorer la recherche en apprentissage automatique, à contribuer à des projets open-source, ou à plonger dans des articles qui repoussent les limites du possible.",
-      "education": "Éducation",
+      "role": "Développeur & Chercheur",
+      "bio1": "Je travaille à l’intersection de la conception de systèmes sécurisés, de la conformité réglementaire et de l’apprentissage automatique appliqué. Mon objectif est de bâtir et de gouverner des technologies utilisées dans des contextes à haut enjeu, où la confiance ne peut pas être présumée.",
+      "bio2": "Mon parcours combine leadership en sécurité en healthtech, recherche appliquée en cryptographie et en apprentissage automatique, ainsi que développement logiciel. Je m’intéresse particulièrement à la façon dont des systèmes complexes peuvent devenir compréhensibles, défendables et déployables de manière responsable.",
+      "bio3": "Hors du boulot, j'écris de la musique, j'aime les comic books et la mode. Je suis attiré par l'art sous toutes ses formes et j'adore découvrir le monde à travers lui.",
+      "education": "Formation",
       "educationValue": "Informatique",
       "focus": "Spécialisation",
-      "focusValue": "Full-Stack & ML",
+      "focusValue": "ML, Sécurité & Gouvernance",
       "status": "Statut",
-      "statusValue": "Les mains dans le code"
+      "statusValue": "En construction active"
     },
     "projects": {
       "section": "02",
@@ -126,18 +146,18 @@
       "demo": "Démo",
       "otherProjects": "Autres projets",
       "featured": {
-        "title": "Visualiseur de Réseaux de Neurones",
-        "description": "Application web interactive pour visualiser les architectures de réseaux de neurones et les processus d'entraînement en temps réel. Conçu avec un accent sur la valeur éducative et l'optimisation des performances.",
-        "status": "Déployé",
-        "year": "2024"
+        "title": "Enda Technologies — Plateforme d’IA en santé",
+        "description": "Outils cliniques propulsés par l’IA, déployés dans un environnement réglementé. À titre de CISO et cofondateur, je dirige les pratiques de sécurité, de vie privée et de conformité, tout en contribuant au développement backend et plateforme.",
+        "status": "En production",
+        "year": "2025"
       },
       "other": [
         {
-          "title": "Planificateur de Tâches Distribué",
+          "title": "Titre de projet exemple #1",
           "year": "0000"
         },
         {
-          "title": "Plateforme de Collaboration en Temps Réel",
+          "title": "Titre de projet exemple #2",
           "year": "0000"
         }
       ]
@@ -149,28 +169,44 @@
       "readPaper": "Lire l'article",
       "papers": [
         {
-          "title": "Mécanismes d'Attention Efficaces pour Modèles de Langage à Long Contexte",
-          "abstract": "Exploration de nouveaux schémas d'attention qui réduisent la complexité computationnelle tout en maintenant les performances sur les tâches en aval. Ce travail propose un schéma d'attention hiérarchique qui évolue linéairement avec la longueur de la séquence.",
-          "status": "En cours",
-          "year": "2024"
+          "title": "Apprentissage automatique sensible aux symétries",
+          "abstract": "Cette recherche montre comment l’intégration de connaissances du domaine directement dans l’architecture des modèles peut améliorer leur robustesse et leur interprétabilité, un enjeu clé pour les systèmes critiques.",
+          "status": "Complété",
+          "year": "2023"
         },
         {
-          "title": "Apprentissage Fédéré avec Garanties de Confidentialité Différentielle",
-          "abstract": "Un cadre pour l'entraînement de modèles d'apprentissage automatique sur des données distribuées tout en fournissant des garanties formelles de confidentialité. Démontre des applications pratiques dans les domaines de la santé et de la finance.",
-          "status": "Publié",
-          "year": "2023"
+          "title": "Analyse de protocoles zéro connaissance relativistes",
+          "abstract": "Ce projet s’est intéressé à l’amélioration des garanties de sûreté dans des contextes adversariaux, en mettant en lumière les limites pratiques des garanties théoriques.",
+          "status": "Complété",
+          "year": "2022"
         }
       ]
     },
-    "contact": {
+    "consulting": {
       "section": "04",
+      "title": "Consultation",
+      "comment": "lorsque vous avez besoin d'un coup de main",
+      "subtitle": "Conformité, sécurité et gouvernance de l’IA",
+      "intro": "J’accompagne des équipes technologiques en démarrage qui développent des produits dans des domaines réglementés ou à haut risque, notamment en santé et en IA.",
+      "focus": "Mon travail vise à aider les équipes à bâtir des fondations défendables en matière de vie privée, de sécurité et de gouvernance, sans complexité superflue.",
+      "areasLabel": "Domaines d’intervention :",
+      "areas": [
+        "Cadres de gouvernance des données et de la vie privée (Québec, Canada, É.-U.)",
+        "Bases de sécurité et de conformité pour startups en santé et en IA",
+        "Conception et mise en œuvre de politiques",
+        "Analyse des risques et pratiques de transparence pour les systèmes d’IA"
+      ],
+      "disclaimer": "Je ne fournis pas de conseils juridiques. La révision juridique se fait en collaboration avec des professionnels qualifiés, au besoin."
+    },
+    "contact": {
+      "section": "05",
       "title": "Me Contacter",
       "comment": "// répond généralement sous 24h",
       "available": "Disponible",
-      "openTo": "Ouvert aux opportunités",
+      "openTo": "Collaboration et conseil",
       "sendEmail": "Envoyer un courriel",
-      "description": "Vous avez un projet en tête ou souhaitez collaborer? Je suis toujours ouvert à discuter de nouvelles opportunités et idées.",
-      "location": "Canada",
+      "description": "Si vous travaillez sur des systèmes où la confiance, le risque ou la gouvernance sont centraux, n’hésitez pas à me contacter.",
+      "location": "Montréal, Canada",
       "remote": "Télétravail OK"
     },
     "footer": {

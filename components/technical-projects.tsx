@@ -5,10 +5,10 @@ import { Github, ExternalLink, ArrowRight } from "lucide-react"
 import { useLanguage } from "@/lib/language-context"
 
 const projectTech = {
-  featured: ["React", "D3.js", "TensorFlow.js", "WebGL"],
+  featured: ["Artificial Intelligence (AI)", "Healthcare Productivity", "Automation", "SaaS"],
   other: [
-    ["Go", "Redis", "gRPC", "Docker"],
-    ["Next.js", "Socket.io", "PostgreSQL", "CRDTs"],
+    ["", "", "", ""],
+    ["", "", "", ""],
   ],
 }
 
@@ -88,6 +88,7 @@ export default function TechnicalProjects() {
                 </time>
               </div>
               <div className="flex gap-3">
+                {/*
                 <a
                   href="#"
                   className="flex items-center gap-2 px-4 py-2 rounded-full border border-border 
@@ -98,8 +99,11 @@ export default function TechnicalProjects() {
                   <Github size={16} aria-hidden="true" />
                   <span>{t.projects.code}</span>
                 </a>
+                */}
                 <a
-                  href="#"
+                  href="https://www.endatechnologies.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="flex items-center gap-2 px-4 py-2 rounded-full border border-border 
                     hover:border-retro-sky hover:bg-retro-sky/10 hover:text-retro-sky text-foreground/60 
                     text-sm transition-all duration-300 group/link"
@@ -141,6 +145,7 @@ export default function TechnicalProjects() {
         </article>
 
         {/* Other projects */}
+        {/*
         <div className="space-y-4" role="list" aria-label="Other projects">
           <p className="text-foreground/40 text-sm font-mono mb-4">{t.projects.otherProjects}</p>
           {t.projects.other.map((project, index) => (
@@ -185,7 +190,8 @@ export default function TechnicalProjects() {
               </div>
             </article>
           ))}
-        </div>
+        </div>  
+        */}
       </div>
     </section>
   )
