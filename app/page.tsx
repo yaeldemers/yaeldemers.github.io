@@ -5,6 +5,7 @@ import ResearchProjects from "@/components/research-projects"
 import ContactSection from "@/components/contact-section"
 import Footer from "@/components/footer"
 import Navigation from "@/components/navigation"
+import ConsultingSection from "@/components/consulting-section"
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
         <BioSection />
         <TechnicalProjects />
         <ResearchProjects />
+        <ConsultingSection />
         <ContactSection />
       </div>
       <Footer />

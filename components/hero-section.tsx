@@ -10,7 +10,7 @@ export default function HeroSection() {
   const [letterStates, setLetterStates] = useState<number[]>([])
   const [exclamationFallen, setExclamationFallen] = useState(false)
 
-  const text = "Hello, world!"
+  const text = "Hello, World!"
   const exclamationIndex = text.length - 1
 
   const handleTextClick = useCallback(() => {
