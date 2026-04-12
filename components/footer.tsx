@@ -131,7 +131,7 @@ export default function Footer() {
 
         <div className="mb-8 text-center" aria-live="polite">
           <p className="text-retro-slate/60 dark:text-retro-sky/60 font-mono text-sm italic tracking-wider transition-all duration-500">
-            "{currentQuote}"
+            &ldquo;{currentQuote}&rdquo;
           </p>
         </div>
 
