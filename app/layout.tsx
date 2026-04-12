@@ -8,6 +8,7 @@ const inter = Inter({ subsets: ["latin"], variable: "--font-inter", display: "sw
 const jetbrainsMono = JetBrains_Mono({ subsets: ["latin"], variable: "--font-jetbrains-mono", display: "swap" })
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://yaeldemers.com"),
   title: "Yael Demers | Software Developer & Researcher",
   description:
     "Portfolio of Yael Demers - Software Developer and Research Enthusiast specializing in full-stack development, machine learning, and building exceptional digital experiences.",
