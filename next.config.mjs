@@ -1,6 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: 'export',
+  output: "export",
   images: {
     // GitHub Pages doesn't support Next.js' default image optimizer.
     unoptimized: true,

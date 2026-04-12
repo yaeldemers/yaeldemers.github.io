@@ -20,7 +20,7 @@ export default function ResearchProjects() {
           setIsVisible(true)
         }
       },
-      { threshold: 0.1 },
+      { threshold: 0.1 }
     )
 
     if (sectionRef.current) {
@@ -118,33 +118,33 @@ export default function ResearchProjects() {
                         {paper.year}
                       </time>
                     </div>
-                      <div className="flex gap-3">
-                        {paperLinks[index]?.github && (
-                          <a
-                            href={paperLinks[index].github}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="flex items-center gap-2 px-4 py-2 rounded-full border border-border
+                    <div className="flex gap-3">
+                      {paperLinks[index]?.github && (
+                        <a
+                          href={paperLinks[index].github}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="flex items-center gap-2 px-4 py-2 rounded-full border border-border
                               hover:border-retro-sky hover:bg-retro-sky/10 hover:text-retro-sky text-foreground/60
                               text-sm transition-all duration-300"
-                            aria-label={`View source code for ${paper.title}`}
-                          >
-                            <Github size={16} aria-hidden="true" />
-                            <span>Code</span>
-                          </a>
-                        )}
+                          aria-label={`View source code for ${paper.title}`}
+                        >
+                          <Github size={16} aria-hidden="true" />
+                          <span>Code</span>
+                        </a>
+                      )}
 
-                        <a
-                          href="#contact"
-                          className="flex items-center gap-2 px-4 py-2 rounded-full border border-border 
+                      <a
+                        href="#contact"
+                        className="flex items-center gap-2 px-4 py-2 rounded-full border border-border 
                             hover:border-retro-sky hover:bg-retro-sky/10 hover:text-retro-sky text-foreground/60 
                             text-sm transition-all duration-300"
-                          aria-label={`Contact about: ${paper.title}`}
-                        >
-                          <span>{t.research.readPaper}</span>
-                          <ExternalLink size={14} aria-hidden="true" />
-                        </a>
-                      </div>
+                        aria-label={`Contact about: ${paper.title}`}
+                      >
+                        <span>{t.research.readPaper}</span>
+                        <ExternalLink size={14} aria-hidden="true" />
+                      </a>
+                    </div>
                   </div>
 
                   <h3

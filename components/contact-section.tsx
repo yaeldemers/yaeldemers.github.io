@@ -23,7 +23,7 @@ export default function ContactSection() {
           setIsVisible(true)
         }
       },
-      { threshold: 0.2 },
+      { threshold: 0.2 }
     )
 
     if (sectionRef.current) {
@@ -83,7 +83,9 @@ export default function ContactSection() {
                   <span className="font-mono text-sm text-foreground/40">{t.contact.openTo}</span>
                 </div>
                 <button
-                  onClick={() => { if (email) window.location.href = `mailto:${email}` }}
+                  onClick={() => {
+                    if (email) window.location.href = `mailto:${email}`
+                  }}
                   disabled={!email}
                   className="flex items-center gap-2 px-4 py-2 rounded-full border border-border
                     hover:border-retro-sky hover:bg-retro-sky/10 hover:text-retro-sky text-foreground/60
@@ -96,7 +98,9 @@ export default function ContactSection() {
               </div>
 
               <button
-                onClick={() => { if (email) window.location.href = `mailto:${email}` }}
+                onClick={() => {
+                  if (email) window.location.href = `mailto:${email}`
+                }}
                 disabled={!email}
                 className="inline-block font-sans text-2xl md:text-3xl font-semibold mb-4 text-foreground hover:text-retro-sky transition-colors duration-300 disabled:opacity-0"
               >

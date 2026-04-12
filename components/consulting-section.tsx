@@ -18,7 +18,7 @@ export default function ConsultingSection() {
           setIsVisible(true)
         }
       },
-      { threshold: 0.1 },
+      { threshold: 0.1 }
     )
 
     if (sectionRef.current) {
@@ -60,23 +60,17 @@ export default function ConsultingSection() {
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
           }`}
         >
-          <p className="text-foreground/70 text-lg leading-relaxed max-w-3xl">
-            {t.consulting.intro}
-          </p>
-          
-          <p className="text-foreground/70 text-lg leading-relaxed max-w-3xl">
-            {t.consulting.focus}
-          </p>
+          <p className="text-foreground/70 text-lg leading-relaxed max-w-3xl">{t.consulting.intro}</p>
+
+          <p className="text-foreground/70 text-lg leading-relaxed max-w-3xl">{t.consulting.focus}</p>
 
           <div
             className={`mt-12 transition-all duration-1000 delay-400 ${
               isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
             }`}
           >
-            <h3 className="text-foreground/60 text-sm font-mono mb-6 tracking-wide">
-              {t.consulting.areasLabel}
-            </h3>
-            
+            <h3 className="text-foreground/60 text-sm font-mono mb-6 tracking-wide">{t.consulting.areasLabel}</h3>
+
             <ul className="grid md:grid-cols-2 gap-4" role="list">
               {t.consulting.areas.map((area, index) => {
                 const Icon = focusIcons[index] || Shield
