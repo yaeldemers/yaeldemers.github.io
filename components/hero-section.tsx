@@ -117,9 +117,10 @@ export default function HeroSection() {
 
         <p
           className={`text-foreground/20 text-xs mt-4 font-mono transition-opacity duration-500 relative z-20 ${
-            collapsed ? "opacity-100" : "opacity-0"
+            collapsed ? "opacity-100 cursor-pointer hover:text-foreground/40" : "opacity-0 pointer-events-none"
           }`}
           aria-live="polite"
+          onClick={collapsed ? handleTextClick : undefined}
         >
           {t.hero.clickToReset}
         </p>
