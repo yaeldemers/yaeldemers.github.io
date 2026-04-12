@@ -101,7 +101,13 @@ export default function RootLayout({
               description:
                 "Software developer and researcher working at the intersection of secure system design, applied machine learning, and regulatory compliance.",
               sameAs: ["https://github.com/yaeldemers", "https://linkedin.com/in/yaeldemers"],
-              knowsAbout: ["Secure System Design", "Applied Machine Learning", "Regulatory Compliance", "Research", "Full-Stack Development"],
+              knowsAbout: [
+                "Secure System Design",
+                "Applied Machine Learning",
+                "Regulatory Compliance",
+                "Research",
+                "Full-Stack Development",
+              ],
               address: {
                 "@type": "PostalAddress",
                 addressCountry: "CA",
