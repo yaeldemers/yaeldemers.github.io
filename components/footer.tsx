@@ -59,10 +59,7 @@ export default function Footer() {
       role="contentinfo"
       aria-label="Site footer"
     >
-      <div className="absolute top-0 right-0 w-64 h-64 bg-retro-sky/5 rounded-full blur-3xl pointer-events-none" />
-      <div className="absolute bottom-0 left-1/4 w-48 h-48 bg-primary/5 rounded-full blur-3xl pointer-events-none" />
-
-      <div className="max-w-5xl mx-auto lg:mx-0 relative">
+<div className="max-w-5xl mx-auto lg:mx-0 relative">
         <nav
           className="flex flex-col md:flex-row items-start md:items-center justify-between gap-8 mb-12"
           aria-label="Footer navigation"
