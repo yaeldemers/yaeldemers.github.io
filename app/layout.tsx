@@ -44,20 +44,11 @@ export const metadata: Metadata = {
     title: "Yael Demers | Software Developer & Researcher",
     description:
       "Portfolio of Yael Demers - Software Developer and Research Enthusiast specializing in full-stack development and machine learning.",
-    images: [
-      {
-        url: "/og-image.jpg",
-        width: 1200,
-        height: 630,
-        alt: "Yael Demers - Software Developer & Researcher",
-      },
-    ],
   },
   twitter: {
-    card: "summary_large_image",
+    card: "summary",
     title: "Yael Demers | Software Developer & Researcher",
     description: "Portfolio of Yael Demers - Software Developer and Research Enthusiast.",
-    images: ["/og-image.jpg"],
   },
   alternates: {
     canonical: "https://yaeldemers.com",
