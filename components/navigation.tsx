@@ -148,9 +148,15 @@ export default function Navigation() {
         }`}
       >
         <div className="relative flex items-center gap-6">
-          <div className="relative overflow-hidden" style={{ height: containerHeight, width: 120 }}>
-            <div className="absolute inset-x-0 top-0 h-20 bg-gradient-to-b from-background via-background/80 to-transparent z-10 pointer-events-none" />
-            <div className="absolute inset-x-0 bottom-0 h-20 bg-gradient-to-t from-background via-background/80 to-transparent z-10 pointer-events-none" />
+          <div
+            className="relative overflow-hidden"
+            style={{
+              height: containerHeight,
+              width: 120,
+              maskImage: "linear-gradient(to bottom, transparent, black 35%, black 65%, transparent)",
+              WebkitMaskImage: "linear-gradient(to bottom, transparent, black 35%, black 65%, transparent)",
+            }}
+          >
 
             <div
               className="absolute inset-0 flex flex-col items-end justify-center"

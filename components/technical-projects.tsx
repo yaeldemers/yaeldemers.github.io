@@ -69,7 +69,7 @@ export default function TechnicalProjects() {
           aria-labelledby="featured-project-title"
         >
           <div
-            className="absolute left-0 top-0 bottom-0 w-1 bg-retro-sky group-hover:bg-primary transition-colors duration-300"
+            className="absolute left-0 top-0 bottom-0 w-1 bg-border group-hover:bg-retro-sky transition-colors duration-300"
             aria-hidden="true"
           />
           <div
@@ -104,8 +104,8 @@ export default function TechnicalProjects() {
                   href="https://www.endatechnologies.com/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-2 px-4 py-2 rounded-full border border-border 
-                    hover:border-retro-sky hover:bg-retro-sky/10 hover:text-retro-sky text-foreground/60 
+                  className="flex items-center gap-2 px-4 py-2 rounded-full border border-border
+                    hover:border-retro-sky hover:bg-retro-sky/10 hover:text-retro-sky text-foreground/60
                     text-sm transition-all duration-300 group/link"
                   aria-label={`View live demo of ${t.projects.featured.title}`}
                 >

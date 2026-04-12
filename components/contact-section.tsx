@@ -4,11 +4,17 @@ import { useState, useEffect, useRef } from "react"
 import { ArrowUpRight, MapPin } from "lucide-react"
 import { useLanguage } from "@/lib/language-context"
 import { siteConfig } from "@/lib/site-config"
+import { decodeEmail } from "@/lib/utils"
 
 export default function ContactSection() {
   const { t } = useLanguage()
   const [isVisible, setIsVisible] = useState(false)
+  const [email, setEmail] = useState("")
   const sectionRef = useRef<HTMLElement>(null)
+
+  useEffect(() => {
+    setEmail(decodeEmail(siteConfig.emailParts))
+  }, [])
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -59,7 +65,7 @@ export default function ContactSection() {
         >
           <article className="group relative rounded-2xl border border-border overflow-hidden hover:border-retro-sky/50 transition-all duration-500">
             <div
-              className="absolute left-0 top-0 bottom-0 w-1 bg-retro-sky group-hover:bg-primary transition-colors duration-300"
+              className="absolute left-0 top-0 bottom-0 w-1 bg-border group-hover:bg-retro-sky transition-colors duration-300"
               aria-hidden="true"
             />
             <div
@@ -76,24 +82,26 @@ export default function ContactSection() {
                   </span>
                   <span className="font-mono text-sm text-foreground/40">{t.contact.openTo}</span>
                 </div>
-                <a
-                  href={`mailto:${siteConfig.email}`}
-                  className="flex items-center gap-2 px-4 py-2 rounded-full border border-border 
-                    hover:border-retro-sky hover:bg-retro-sky/10 hover:text-retro-sky text-foreground/60 
-                    text-sm transition-all duration-300"
-                  aria-label={`${t.contact.sendEmail} to ${siteConfig.email}`}
+                <button
+                  onClick={() => email && window.open(`mailto:${email}`)}
+                  disabled={!email}
+                  className="flex items-center gap-2 px-4 py-2 rounded-full border border-border
+                    hover:border-retro-sky hover:bg-retro-sky/10 hover:text-retro-sky text-foreground/60
+                    text-sm transition-all duration-300 disabled:opacity-50 disabled:cursor-default"
+                  aria-label={t.contact.sendEmail}
                 >
                   <span>{t.contact.sendEmail}</span>
                   <ArrowUpRight size={16} aria-hidden="true" />
-                </a>
+                </button>
               </div>
 
-              <a
-                href={`mailto:${siteConfig.email}`}
-                className="inline-block font-sans text-2xl md:text-3xl font-semibold mb-4 text-foreground hover:text-retro-sky transition-colors duration-300"
+              <button
+                onClick={() => email && window.open(`mailto:${email}`)}
+                disabled={!email}
+                className="inline-block font-sans text-2xl md:text-3xl font-semibold mb-4 text-foreground hover:text-retro-sky transition-colors duration-300 disabled:opacity-0"
               >
-                {siteConfig.email}
-              </a>
+                {email}
+              </button>
 
               <p className="text-foreground/60 text-base mb-6 leading-relaxed max-w-3xl">{t.contact.description}</p>
 
