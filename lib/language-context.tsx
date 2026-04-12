@@ -6,6 +6,10 @@ import translations from "./translations.json"
 type Language = "en" | "fr"
 type Translations = typeof translations.en
 
+export function isValidLanguage(val: unknown): val is Language {
+  return val === "en" || val === "fr"
+}
+
 interface LanguageContextType {
   language: Language
   setLanguage: (lang: Language) => void
@@ -18,8 +22,8 @@ export function LanguageProvider({ children }: { children: ReactNode }) {
   const [language, setLanguage] = useState<Language>("en")
 
   useEffect(() => {
-    const saved = localStorage.getItem("language") as Language
-    if (saved && (saved === "en" || saved === "fr")) {
+    const saved = localStorage.getItem("language")
+    if (isValidLanguage(saved)) {
       setLanguage(saved)
     }
   }, [])
