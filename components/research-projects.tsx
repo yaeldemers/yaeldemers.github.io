@@ -3,6 +3,7 @@
 import { useEffect, useRef, useState } from "react"
 import { ExternalLink, BookOpen, Beaker, Github } from "lucide-react"
 import { useLanguage } from "@/lib/language-context"
+import { getStatusStyles } from "@/lib/utils"
 
 const paperIcons = [Beaker, BookOpen]
 
@@ -28,19 +29,6 @@ export default function ResearchProjects() {
 
     return () => observer.disconnect()
   }, [])
-
-  const getStatusStyles = (status: string) => {
-    const isInProgress = status === "In Progress" || status === "En cours"
-    const isPublished = status === "Published" || status === "Publié"
-
-    if (isPublished) {
-      return "text-retro-sky bg-retro-sky/10 border-retro-sky/20"
-    }
-    if (isInProgress) {
-      return "text-primary bg-primary/10 border-primary/20"
-    }
-    return "text-foreground/50 bg-foreground/5 border-foreground/10"
-  }
 
   const paperTags = [
     ["Cosmology", "Machine Learning", "Interpretable Systems"],
