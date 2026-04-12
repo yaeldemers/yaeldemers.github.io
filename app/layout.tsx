@@ -11,14 +11,15 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://yaeldemers.com"),
   title: "Yael Demers | Software Developer & Researcher",
   description:
-    "Portfolio of Yael Demers - Software Developer and Research Enthusiast specializing in full-stack development, machine learning, and building exceptional digital experiences.",
+    "Software developer and researcher working at the intersection of secure system design, applied machine learning, and regulatory compliance. Based in Montréal.",
   keywords: [
     "software developer",
     "researcher",
-    "full-stack",
-    "machine learning",
-    "web development",
-    "portfolio",
+    "full-stack development",
+    "secure systems",
+    "applied machine learning",
+    "regulatory compliance",
+    "healthtech",
     "Yael Demers",
   ],
   authors: [{ name: "Yael Demers" }],
@@ -40,15 +41,15 @@ export const metadata: Metadata = {
     locale: "en_US",
     alternateLocale: "fr_CA",
     url: "https://yaeldemers.com",
-    siteName: "Yael Demers Portfolio",
+    siteName: "Yael Demers",
     title: "Yael Demers | Software Developer & Researcher",
     description:
-      "Portfolio of Yael Demers - Software Developer and Research Enthusiast specializing in full-stack development and machine learning.",
+      "Software developer and researcher working at the intersection of secure system design, applied machine learning, and regulatory compliance.",
   },
   twitter: {
     card: "summary",
     title: "Yael Demers | Software Developer & Researcher",
-    description: "Portfolio of Yael Demers - Software Developer and Research Enthusiast.",
+    description: "Software developer and researcher. Secure systems, applied ML, compliance. Based in Montréal.",
   },
   alternates: {
     canonical: "https://yaeldemers.com",
@@ -98,9 +99,9 @@ export default function RootLayout({
               url: "https://yaeldemers.com",
               jobTitle: "Software Developer & Researcher",
               description:
-                "Software Developer and Research Enthusiast specializing in full-stack development and machine learning.",
+                "Software developer and researcher working at the intersection of secure system design, applied machine learning, and regulatory compliance.",
               sameAs: ["https://github.com/yaeldemers", "https://linkedin.com/in/yaeldemers"],
-              knowsAbout: ["Software Development", "Machine Learning", "Full-Stack Development", "Research"],
+              knowsAbout: ["Secure System Design", "Applied Machine Learning", "Regulatory Compliance", "Research", "Full-Stack Development"],
               address: {
                 "@type": "PostalAddress",
                 addressCountry: "CA",
