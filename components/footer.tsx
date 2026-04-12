@@ -59,7 +59,7 @@ export default function Footer() {
       role="contentinfo"
       aria-label="Site footer"
     >
-<div className="max-w-5xl mx-auto lg:mx-0 relative">
+      <div className="max-w-5xl mx-auto lg:mx-0 relative">
         <nav
           className="flex flex-col md:flex-row items-start md:items-center justify-between gap-8 mb-12"
           aria-label="Footer navigation"
@@ -119,7 +119,11 @@ export default function Footer() {
           >
             {mounted && (
               <Image
-                src={resolvedTheme === "dark" ? "/images/swordfish-ii-outline-thick-white.png" : "/images/swordfish-ii-outline-thick.png"}
+                src={
+                  resolvedTheme === "dark"
+                    ? "/images/swordfish-ii-outline-thick-white.png"
+                    : "/images/swordfish-ii-outline-thick.png"
+                }
                 alt="Swordfish II spaceship from Cowboy Bebop"
                 fill
                 className="object-contain opacity-70 hover:opacity-100 transition-opacity"
@@ -131,7 +135,7 @@ export default function Footer() {
 
         <div className="mb-8 text-center" aria-live="polite">
           <p className="text-retro-slate/60 dark:text-retro-sky/60 font-mono text-sm italic tracking-wider transition-all duration-500">
-            "{currentQuote}"
+            &ldquo;{currentQuote}&rdquo;
           </p>
         </div>
 

@@ -13,9 +13,7 @@ export function useActiveSection(sectionIds: readonly string[], offsetPx = 160) 
   activeRef.current = activeSection
 
   useEffect(() => {
-    const elements = sectionIds
-      .map((id) => document.getElementById(id))
-      .filter((el): el is HTMLElement => Boolean(el))
+    const elements = sectionIds.map((id) => document.getElementById(id)).filter((el): el is HTMLElement => Boolean(el))
 
     if (elements.length === 0) return
 
@@ -38,6 +36,7 @@ export function useActiveSection(sectionIds: readonly string[], offsetPx = 160) 
     onScroll()
     window.addEventListener("scroll", onScroll, { passive: true })
     return () => window.removeEventListener("scroll", onScroll)
+    // eslint-disable-next-line react-hooks/exhaustive-deps -- serialized key intentionally replaces the array reference
   }, [sectionIds.join("|"), offsetPx])
 
   return activeSection

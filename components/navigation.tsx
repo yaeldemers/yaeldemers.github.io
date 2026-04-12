@@ -40,7 +40,7 @@ export default function Navigation() {
       { id: "consulting", label: t.nav.consulting },
       { id: "contact", label: t.nav.contact },
     ],
-    [t],
+    [t]
   )
 
   const sectionIds = useMemo(() => navItems.map((n) => n.id) as string[], [navItems])
@@ -157,7 +157,6 @@ export default function Navigation() {
               WebkitMaskImage: "linear-gradient(to bottom, transparent, black 35%, black 65%, transparent)",
             }}
           >
-
             <div
               className="absolute inset-0 flex flex-col items-end justify-center"
               style={{ transform: `translateY(${-fractionalOffset * itemHeight}px)` }}
@@ -263,7 +262,8 @@ export default function Navigation() {
             aria-label="Scroll to top"
           >
             {/* Desktop-only icon (hidden on mobile) */}
-            <span className="
+            <span
+              className="
                 relative hidden lg:block w-12 h-8
                 transition-transform duration-300
                 group-hover:translate-y-[-2.5px]

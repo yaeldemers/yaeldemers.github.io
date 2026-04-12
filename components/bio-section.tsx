@@ -16,7 +16,7 @@ export default function BioSection() {
           setIsVisible(true)
         }
       },
-      { threshold: 0.2 },
+      { threshold: 0.2 }
     )
 
     if (sectionRef.current) {
