@@ -1,7 +1,8 @@
 "use client"
 
 import { useEffect, useRef, useState } from "react"
-import { ExternalLink, BookOpen, Beaker, Github } from "lucide-react"
+import { ExternalLink, BookOpen, Beaker } from "lucide-react"
+import { Github } from "@/components/brand-icons"
 import { useLanguage } from "@/lib/language-context"
 import { getStatusStyles } from "@/lib/utils"
 

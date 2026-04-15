@@ -2,16 +2,16 @@
 
 @custom-variant dark (&:is(.dark *));
 
-/* Updated color palette: Sky Blue Light, Charcoal Blue, Burnt Tangerine, Pitch Black, Porcelain */
+/* Updated color palette: Sky Blue Light, Yale Blue, Burnt Tangerine, Pitch Black, Porcelain */
 :root {
   --retro-tangerine: #f03929;
   --retro-cream: #fffdf6;
-  /* Light mode uses Charcoal Blue for contrast */
-  --retro-sky: #394c5e;
-  --retro-slate: #394c5e;
+  /* Light mode uses Yale Blue for contrast */
+  --retro-sky: #11416e;
+  --retro-slate: #11416e;
   --retro-black: #0e0804;
 
-  /* Light mode - porcelain background with dark text, charcoal blue accent */
+  /* Light mode - porcelain background with dark text, Yale blue accent */
   --background: #fffdf6;
   --foreground: #0e0804;
   --card: #ffffff;
@@ -20,12 +20,12 @@
   --popover-foreground: #0e0804;
   --primary: #f03929;
   --primary-foreground: #fffdf6;
-  /* secondary/accent use charcoal blue in light mode */
-  --secondary: #394c5e;
+  /* secondary/accent use Yale blue in light mode */
+  --secondary: #11416e;
   --secondary-foreground: #fffdf6;
-  --muted: #394c5e;
+  --muted: #11416e;
   --muted-foreground: #0e080480;
-  --accent: #394c5e;
+  --accent: #11416e;
   --accent-foreground: #fffdf6;
   --destructive: #f03929;
   --destructive-foreground: #fffdf6;
@@ -42,7 +42,7 @@
   --sidebar-foreground: #0e0804;
   --sidebar-primary: #f03929;
   --sidebar-primary-foreground: #fffdf6;
-  --sidebar-accent: #394c5e;
+  --sidebar-accent: #11416e;
   --sidebar-accent-foreground: #fffdf6;
   --sidebar-border: #0e080415;
   --sidebar-ring: #f03929;

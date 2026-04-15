@@ -79,7 +79,7 @@ export default function BioSection() {
               <div>
                 <dt className="text-foreground/40 text-sm font-mono mb-1">{t.about.status}</dt>
                 <dd className="flex items-center gap-2">
-                  <span className="w-2 h-2 bg-green-500 rounded-full animate-pulse" aria-hidden="true" />
+                  <span className="w-2 h-2 shrink-0 bg-green-500 rounded-full animate-pulse" aria-hidden="true" />
                   <span className="text-foreground">{t.about.statusValue}</span>
                 </dd>
               </div>

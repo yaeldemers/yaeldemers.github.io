@@ -1,7 +1,8 @@
 "use client"
 
 import { useState, useRef, useEffect } from "react"
-import { Github, Linkedin, ArrowUp } from "lucide-react"
+import { ArrowUp } from "lucide-react"
+import { Github, Linkedin } from "@/components/brand-icons"
 import Image from "next/image"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
@@ -126,6 +127,7 @@ export default function Footer() {
             onClick={handleShipClick}
             className="relative w-12 h-8 hover:scale-110 transition-transform duration-300 cursor-pointer"
             aria-label="Click for a random Cowboy Bebop quote"
+            title={t.footer.shipTooltip}
           >
             {mounted && (
               <Image

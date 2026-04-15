@@ -23,7 +23,7 @@
       "role": "Developer & Researcher",
       "bio1": "I work at the intersection of secure system design, regulatory compliance, and applied machine learning. My focus is on building and governing technologies that operate in high-stakes environments, where correctness, accountability, and trust matter.",
       "bio2": "My background spans security leadership in healthtech, applied research in cryptography and machine learning, and hands-on software development. Across these domains, I’m interested in how complex systems can be made more interpretable, defensible, and responsibly deployable under real-world constraints.",
-      "bio3": "Outside of work, I write music, enjoy comic books and fashion. I am drawn to art in all its forms and love discovering the world through it.",
+      "bio3": "Outside of work, I write music, enjoy comic books and fashion. I'm a fan of art in all its forms and love discovering the world through it.",
       "education": "Background",
       "educationValue": "Computer Science",
       "focus": "Focus",
@@ -109,7 +109,8 @@
       "backToTop": "Back to top",
       "credit": "Designed & built by Yael Demers",
       "terms": "Terms",
-      "privacy": "Privacy"
+      "privacy": "Privacy",
+      "shipTooltip": "Ever seen that ship before?"
     },
     "terms": {
       "backToHome": "Back to home",
@@ -210,13 +211,13 @@
       "role": "Développeur & Chercheur",
       "bio1": "Je travaille à l’intersection de la conception de systèmes sécurisés, de la conformité réglementaire et de l’apprentissage automatique appliqué. Mon objectif est de bâtir et de gouverner des technologies utilisées dans des contextes à haut enjeu, où la confiance ne peut pas être présumée.",
       "bio2": "Mon parcours combine leadership en sécurité en healthtech, recherche appliquée en cryptographie et en apprentissage automatique, ainsi que développement logiciel. Je m’intéresse particulièrement à la façon dont des systèmes complexes peuvent devenir compréhensibles, défendables et déployables de manière responsable.",
-      "bio3": "Hors du boulot, j'écris de la musique, j'aime les comic books et la mode. Je suis attiré par l'art sous toutes ses formes et j'adore découvrir le monde à travers lui.",
+      "bio3": "À l'extérieur du boulot, j'écris de la musique, j'aime les comic books et la mode. Je suis fan d'art sous toutes ses formes et j'adore découvrir le monde à travers lui.",
       "education": "Formation",
       "educationValue": "Informatique",
       "focus": "Spécialisation",
       "focusValue": "ML, Sécurité & Gouvernance",
       "status": "Statut",
-      "statusValue": "En construction active"
+      "statusValue": "À fond dans le développement"
     },
     "projects": {
       "section": "02",
@@ -296,7 +297,8 @@
       "backToTop": "Retour en haut",
       "credit": "Conçu et développé par Yael Demers",
       "terms": "Conditions",
-      "privacy": "Confidentialité"
+      "privacy": "Confidentialité",
+      "shipTooltip": "Vous reconnaissez ce vaisseau ?"
     },
     "terms": {
       "backToHome": "Retour à l'accueil",

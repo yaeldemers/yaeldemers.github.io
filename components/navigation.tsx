@@ -1,7 +1,8 @@
 "use client"
 
 import { useEffect, useMemo, useRef, useState } from "react"
-import { Github, Linkedin, Moon, Sun } from "lucide-react"
+import { Moon, Sun } from "lucide-react"
+import { Github, Linkedin } from "@/components/brand-icons"
 import { useTheme } from "next-themes"
 import { useLanguage } from "@/lib/language-context"
 import { useActiveSection } from "@/lib/hooks/use-active-section"
@@ -217,7 +218,7 @@ export default function Navigation({ sections }: NavigationProps = {}) {
         <div className="absolute -bottom-20 right-0 flex items-center gap-3">
           <button
             onClick={() => setLanguage(language === "en" ? "fr" : "en")}
-            className="text-foreground/40 hover:text-retro-sky transition-colors px-2 py-1 rounded-full hover:bg-retro-sky/10 font-mono text-xs"
+            className="text-foreground/40 hover:text-retro-sky transition-colors w-8 h-8 flex items-center justify-center rounded-full hover:bg-retro-sky/10 font-mono text-xs"
             aria-label={language === "en" ? "Switch language to French" : "Switch language to English"}
           >
             {language === "en" ? "FR" : "EN"}
@@ -307,7 +308,7 @@ export default function Navigation({ sections }: NavigationProps = {}) {
           <div className="flex lg:hidden items-center gap-2">
             <button
               onClick={() => setLanguage(language === "en" ? "fr" : "en")}
-              className="text-foreground/60 hover:text-retro-sky transition-colors px-2 py-1 rounded-full font-mono text-xs"
+              className="text-foreground/60 hover:text-retro-sky transition-colors w-8 h-8 flex items-center justify-center rounded-full font-mono text-xs"
               aria-label={language === "en" ? "Switch language to French" : "Switch language to English"}
             >
               {language === "en" ? "FR" : "EN"}
