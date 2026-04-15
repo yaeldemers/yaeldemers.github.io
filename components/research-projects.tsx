@@ -130,7 +130,7 @@ export default function ResearchProjects() {
                           aria-label={`View source code for ${paper.title}`}
                         >
                           <Github size={16} aria-hidden="true" />
-                          <span>Code</span>
+                          <span>{t.projects.code}</span>
                         </a>
                       )}
 

@@ -7,8 +7,14 @@ import { useLanguage } from "@/lib/language-context"
 import { useActiveSection } from "@/lib/hooks/use-active-section"
 import { siteConfig } from "@/lib/site-config"
 import Image from "next/image"
+import { usePathname, useRouter } from "next/navigation"
 
 type NavItem = { id: string; label: string }
+
+interface NavigationProps {
+  /** Override the default homepage nav items with page-specific sections. */
+  sections?: NavItem[]
+}
 
 function scrollToSection(id: string) {
   document.getElementById(id)?.scrollIntoView({ behavior: "smooth" })
@@ -19,20 +25,27 @@ function scrollToSection(id: string) {
  * The animation is intentionally subtle; if you want to go simpler, you can
  * replace the roller with a basic vertical list.
  */
-export default function Navigation() {
+export default function Navigation({ sections }: NavigationProps = {}) {
   const { language, setLanguage, t } = useLanguage()
   const { resolvedTheme, setTheme } = useTheme()
   const [mounted, setMounted] = useState(false)
+  const pathname = usePathname()
+  const router = useRouter()
+  const isHomePage = pathname === "/"
 
   useEffect(() => {
     setMounted(true)
   }, [])
 
   function scrollToTop() {
-    window.scrollTo({ top: 0, behavior: "smooth" })
+    if (isHomePage) {
+      window.scrollTo({ top: 0, behavior: "smooth" })
+    } else {
+      router.push("/")
+    }
   }
 
-  const navItems = useMemo<NavItem[]>(
+  const defaultNavItems = useMemo<NavItem[]>(
     () => [
       { id: "about", label: t.nav.about },
       { id: "projects", label: t.nav.projects },
@@ -42,6 +55,8 @@ export default function Navigation() {
     ],
     [t]
   )
+
+  const navItems = sections ?? defaultNavItems
 
   const sectionIds = useMemo(() => navItems.map((n) => n.id) as string[], [navItems])
   const activeSection = useActiveSection(sectionIds)
@@ -324,7 +339,7 @@ export default function Navigation() {
               aria-label={!mounted ? "Toggle theme" : isDark ? "Switch to light mode" : "Switch to dark mode"}
             >
               {!mounted ? (
-                <span className="sr-only">Toggle theme</span>
+                <span className="sr-only">{t.nav.toggleTheme}</span>
               ) : isDark ? (
                 <Sun
                   size={18}

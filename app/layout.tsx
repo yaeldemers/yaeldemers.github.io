@@ -117,15 +117,15 @@ export default function RootLayout({
         />
       </head>
       <body className={`${inter.variable} ${jetbrainsMono.variable} font-sans antialiased`}>
+        {/* eslint-disable i18next/no-literal-string -- server component; skip link is a structural accessibility element intentionally in English */}
         <a
           href="#about"
           className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-50 focus:px-4 focus:py-2 focus:bg-primary focus:text-white focus:rounded-lg"
         >
           Skip to main content
         </a>
-        <Providers>
-          {children}
-        </Providers>
+        {/* eslint-enable i18next/no-literal-string */}
+        <Providers>{children}</Providers>
       </body>
     </html>
   )

@@ -3,6 +3,7 @@
 import { useState, useRef, useEffect } from "react"
 import { Github, Linkedin, ArrowUp } from "lucide-react"
 import Image from "next/image"
+import Link from "next/link"
 import { useLanguage } from "@/lib/language-context"
 import { useTheme } from "next-themes"
 import { siteConfig } from "@/lib/site-config"
@@ -141,6 +142,15 @@ export default function Footer() {
 
         <div className="flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-foreground/30 text-sm">{t.footer.credit}</p>
+          <div className="flex items-center gap-3 text-foreground/25 text-xs font-mono">
+            <Link href="/terms" className="hover:text-foreground/50 transition-colors">
+              {t.footer.terms}
+            </Link>
+            <span aria-hidden="true">·</span>
+            <Link href="/privacy" className="hover:text-foreground/50 transition-colors">
+              {t.footer.privacy}
+            </Link>
+          </div>
           <span className="text-foreground/20 text-xs font-mono">© {new Date().getFullYear()}</span>
         </div>
       </div>
