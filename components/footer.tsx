@@ -126,6 +126,7 @@ export default function Footer() {
             onClick={handleShipClick}
             className="relative w-12 h-8 hover:scale-110 transition-transform duration-300 cursor-pointer"
             aria-label="Click for a random Cowboy Bebop quote"
+            title={t.footer.shipTooltip}
           >
             {mounted && (
               <Image

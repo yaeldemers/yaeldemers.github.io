@@ -109,7 +109,8 @@
       "backToTop": "Back to top",
       "credit": "Designed & built by Yael Demers",
       "terms": "Terms",
-      "privacy": "Privacy"
+      "privacy": "Privacy",
+      "shipTooltip": "Seen that ship before?"
     },
     "terms": {
       "backToHome": "Back to home",
@@ -296,7 +297,8 @@
       "backToTop": "Retour en haut",
       "credit": "Conçu et développé par Yael Demers",
       "terms": "Conditions",
-      "privacy": "Confidentialité"
+      "privacy": "Confidentialité",
+      "shipTooltip": "Vous reconnaissez ce vaisseau ?"
     },
     "terms": {
       "backToHome": "Retour à l'accueil",
