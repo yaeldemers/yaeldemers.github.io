@@ -4,6 +4,7 @@ import { useState, useRef, useEffect } from "react"
 import { Github, Linkedin, ArrowUp } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
+import { usePathname } from "next/navigation"
 import { useLanguage } from "@/lib/language-context"
 import { useTheme } from "next-themes"
 import { siteConfig } from "@/lib/site-config"
@@ -30,9 +31,17 @@ const bebopQuotes = [
 export default function Footer() {
   const { t } = useLanguage()
   const { resolvedTheme } = useTheme()
+  const pathname = usePathname()
   const [mounted, setMounted] = useState(false)
   const [currentQuote, setCurrentQuote] = useState(bebopQuotes[0])
   const remainingQuotesRef = useRef<string[]>([...bebopQuotes].slice(1))
+
+  const handlePageLink = (href: string) => (e: React.MouseEvent) => {
+    if (pathname === href) {
+      e.preventDefault()
+      window.scrollTo({ top: 0, behavior: "smooth" })
+    }
+  }
 
   useEffect(() => {
     setMounted(true)
@@ -143,11 +152,19 @@ export default function Footer() {
         <div className="flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-foreground/30 text-sm">{t.footer.credit}</p>
           <div className="flex items-center gap-3 text-foreground/25 text-xs font-mono">
-            <Link href="/terms" className="hover:text-foreground/50 transition-colors">
+            <Link
+              href="/terms"
+              className="hover:text-foreground/50 transition-colors"
+              onClick={handlePageLink("/terms")}
+            >
               {t.footer.terms}
             </Link>
             <span aria-hidden="true">·</span>
-            <Link href="/privacy" className="hover:text-foreground/50 transition-colors">
+            <Link
+              href="/privacy"
+              className="hover:text-foreground/50 transition-colors"
+              onClick={handlePageLink("/privacy")}
+            >
               {t.footer.privacy}
             </Link>
           </div>
