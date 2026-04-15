@@ -135,7 +135,7 @@
       "ip": {
         "heading": "Intellectual Property",
         "comment": "// ownership of content",
-        "body": "All written content, project descriptions, and design on this site are © Yael Demers. Source code for this site is available on GitHub and is subject to the license in that repository. You may not reproduce site content without attribution."
+        "body": "The source code for this site is released under the MIT License — you are welcome to use it for your own portfolio or projects. Personal content, including text, images, and branding, remains © Yael Demers and may not be copied or reproduced."
       },
       "disclaimers": {
         "heading": "Disclaimers",
@@ -322,7 +322,7 @@
       "ip": {
         "heading": "Propriété intellectuelle",
         "comment": "// titularité du contenu",
-        "body": "Tous les textes, descriptions de projets et éléments de design de ce site sont © Yael Demers. Le code source est disponible sur GitHub et est soumis à la licence de ce dépôt. La reproduction du contenu sans attribution n'est pas autorisée."
+        "body": "Le code source de ce site est publié sous licence MIT — vous êtes libre de l'utiliser pour votre propre portfolio ou vos projets. Le contenu personnel, notamment les textes, images et éléments de marque, reste © Yael Demers et ne peut être copié ou reproduit."
       },
       "disclaimers": {
         "heading": "Avis de non-responsabilité",

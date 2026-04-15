@@ -45,11 +45,18 @@ export const metadata: Metadata = {
     title: "Yael Demers | Software Developer & Researcher",
     description:
       "Software developer and researcher working at the intersection of secure system design, applied machine learning, and regulatory compliance.",
+    images: [
+      {
+        url: "/images/yael-demers-enda-technologies.jpg",
+        alt: "Yael Demers",
+      },
+    ],
   },
   twitter: {
-    card: "summary",
+    card: "summary_large_image",
     title: "Yael Demers | Software Developer & Researcher",
     description: "Software developer and researcher. Secure systems, applied ML, compliance. Based in Montréal.",
+    images: ["/images/yael-demers-enda-technologies.jpg"],
   },
   alternates: {
     canonical: "https://yaeldemers.com",
