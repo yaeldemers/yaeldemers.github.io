@@ -1,7 +1,8 @@
 "use client"
 
 import { useState, useRef, useEffect } from "react"
-import { Github, Linkedin, ArrowUp } from "lucide-react"
+import { ArrowUp } from "lucide-react"
+import { Github, Linkedin } from "@/components/brand-icons"
 import Image from "next/image"
 import Link from "next/link"
 import { usePathname } from "next/navigation"

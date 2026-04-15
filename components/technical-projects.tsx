@@ -1,7 +1,8 @@
 "use client"
 
 import { useEffect, useRef, useState } from "react"
-import { Github, ExternalLink, ArrowRight } from "lucide-react"
+import { ExternalLink, ArrowRight } from "lucide-react"
+import { Github } from "@/components/brand-icons"
 import { useLanguage } from "@/lib/language-context"
 
 const projectTech = {
