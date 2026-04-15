@@ -77,7 +77,7 @@ export default function ContactSection() {
               <div className="flex flex-wrap items-center justify-between gap-4 mb-6">
                 <div className="flex items-center gap-3">
                   <span className="flex items-center gap-2 text-xs px-3 py-1.5 rounded-full font-mono bg-green-500/10 text-green-600 dark:text-green-400 border border-green-500/20">
-                    <span className="w-2 h-2 bg-green-500 rounded-full animate-pulse" aria-hidden="true" />
+                    <span className="w-2 h-2 shrink-0 bg-green-500 rounded-full animate-pulse" aria-hidden="true" />
                     <span>{t.contact.available}</span>
                   </span>
                   <span className="font-mono text-sm text-foreground/40">{t.contact.openTo}</span>
@@ -118,7 +118,7 @@ export default function ContactSection() {
                 </li>
                 <li>
                   <span className="flex items-center gap-2 text-sm px-4 py-2 rounded-full border border-border text-foreground/50 group-hover:border-retro-sky/30 group-hover:text-retro-sky/80 transition-all duration-300">
-                    <span className="w-2 h-2 bg-green-500 rounded-full animate-pulse" aria-hidden="true" />
+                    <span className="w-2 h-2 shrink-0 bg-green-500 rounded-full animate-pulse" aria-hidden="true" />
                     {t.contact.remote}
                   </span>
                 </li>
