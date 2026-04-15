@@ -18,7 +18,7 @@
     "about": {
       "comment": "// about me",
       "name": "Yael Demers",
-      "role": "Developper & Researcher",
+      "role": "Developer & Researcher",
       "bio1": "I work at the intersection of secure system design, regulatory compliance, and applied machine learning. My focus is on building and governing technologies that operate in high-stakes environments, where correctness, accountability, and trust matter.",
       "bio2": "My background spans security leadership in healthtech, applied research in cryptography and machine learning, and hands-on software development. Across these domains, I’m interested in how complex systems can be made more interpretable, defensible, and responsibly deployable under real-world constraints.",
       "bio3": "Outside of work, I write music, enjoy comic books and fashion. I am drawn to art in all its forms and love discovering the world through it.",
