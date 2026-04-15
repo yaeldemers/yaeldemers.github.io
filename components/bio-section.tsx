@@ -101,7 +101,7 @@ export default function BioSection() {
                   src="/images/yael-demers-enda-technologies.jpg"
                   alt="Professional portrait of Yael Demers"
                   className="object-cover"
-                  sizes="(min-width: 1024px) 192px, 160px"
+                  sizes="(min-width: 1024px) 288px, 192px"
                   quality={95}
                   priority
                   fill
