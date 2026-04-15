@@ -125,9 +125,7 @@ export default function RootLayout({
           Skip to main content
         </a>
         {/* eslint-enable i18next/no-literal-string */}
-        <Providers>
-          {children}
-        </Providers>
+        <Providers>{children}</Providers>
       </body>
     </html>
   )

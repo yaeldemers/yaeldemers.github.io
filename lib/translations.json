@@ -107,7 +107,83 @@
       "github": "GitHub",
       "linkedin": "LinkedIn",
       "backToTop": "Back to top",
-      "credit": "Designed & built by Yael Demers"
+      "credit": "Designed & built by Yael Demers",
+      "terms": "Terms",
+      "privacy": "Privacy"
+    },
+    "terms": {
+      "backToHome": "Back to home",
+      "title": "Terms of Use",
+      "updated": "Last updated: April 2026",
+      "nav": {
+        "overview": "Overview",
+        "use": "Acceptable Use",
+        "ip": "Intellectual Property",
+        "disclaimers": "Disclaimers",
+        "contact": "Contact"
+      },
+      "overview": {
+        "heading": "Overview",
+        "comment": "// what this covers",
+        "body": "This site, yaeldemers.com, is a personal portfolio. By accessing it you agree to these terms. There is no registration, no account, and no commercial transaction involved."
+      },
+      "use": {
+        "heading": "Acceptable Use",
+        "comment": "// how you may use this site",
+        "body": "You may access and read this site for personal or informational purposes. Automated scraping, bulk downloading of content, or any use that places unreasonable load on the site is not permitted. This site may not be used to misrepresent my identity or work."
+      },
+      "ip": {
+        "heading": "Intellectual Property",
+        "comment": "// ownership of content",
+        "body": "All written content, project descriptions, and design on this site are © Yael Demers. Source code for this site is available on GitHub and is subject to the license in that repository. You may not reproduce site content without attribution."
+      },
+      "disclaimers": {
+        "heading": "Disclaimers",
+        "comment": "// no warranties",
+        "body": "This site is provided as-is without warranties of any kind. The consulting section describes services I offer — it is informational only and does not constitute professional, legal, or regulatory advice. I reserve the right to update or remove content at any time."
+      },
+      "contact": {
+        "heading": "Contact",
+        "comment": "// questions about these terms",
+        "body": "If you have questions about these terms, you can reach me via the contact section on the homepage."
+      }
+    },
+    "privacy": {
+      "backToHome": "Back to home",
+      "title": "Privacy Policy",
+      "updated": "Last updated: April 2026",
+      "nav": {
+        "overview": "Overview",
+        "data": "Data Collection",
+        "cookies": "Local Storage",
+        "thirdParty": "Third-Party Links",
+        "contact": "Contact"
+      },
+      "overview": {
+        "heading": "Overview",
+        "comment": "// how your data is handled",
+        "body": "yaeldemers.com is a static website with no server-side backend. No personal data is collected, stored, or transmitted by this site. There is no analytics tracking, no advertising, and no contact form that retains submissions."
+      },
+      "data": {
+        "heading": "Data Collection",
+        "comment": "// what is and is not collected",
+        "body": "This site does not collect any personally identifiable information. There are no cookies set by this site, no tracking pixels, and no user accounts. Standard server access logs may be maintained by the hosting provider (GitHub Pages) under their own privacy policy."
+      },
+      "cookies": {
+        "heading": "Local Storage",
+        "comment": "// browser preferences only",
+        "body": "This site stores two values in your browser's localStorage: your preferred color theme (light or dark) and your preferred language (English or French). These values remain on your device and are never transmitted anywhere. You can clear them at any time through your browser settings."
+      },
+      "thirdParty": {
+        "heading": "Third-Party Links",
+        "comment": "// outbound links",
+        "body": "This site links to external services including GitHub, LinkedIn, and Enda Technologies. Once you leave this site, their respective privacy policies apply. I have no control over and assume no responsibility for the content or privacy practices of those sites."
+      },
+      "contact": {
+        "heading": "Contact",
+        "comment": "// privacy questions",
+        "body": "For any questions about this privacy policy, please use the contact section on the homepage."
+      }
     }
   },
   "fr": {
@@ -218,7 +294,83 @@
       "github": "GitHub",
       "linkedin": "LinkedIn",
       "backToTop": "Retour en haut",
-      "credit": "Conçu et développé par Yael Demers"
+      "credit": "Conçu et développé par Yael Demers",
+      "terms": "Conditions",
+      "privacy": "Confidentialité"
+    },
+    "terms": {
+      "backToHome": "Retour à l'accueil",
+      "title": "Conditions d'utilisation",
+      "updated": "Dernière mise à jour : avril 2026",
+      "nav": {
+        "overview": "Aperçu",
+        "use": "Utilisation acceptable",
+        "ip": "Propriété intellectuelle",
+        "disclaimers": "Avis de non-responsabilité",
+        "contact": "Contact"
+      },
+      "overview": {
+        "heading": "Aperçu",
+        "comment": "// ce que couvrent ces conditions",
+        "body": "Ce site, yaeldemers.com, est un portfolio personnel. En y accédant, vous acceptez ces conditions. Il n'y a ni inscription, ni compte, ni transaction commerciale."
+      },
+      "use": {
+        "heading": "Utilisation acceptable",
+        "comment": "// comment vous pouvez utiliser ce site",
+        "body": "Vous pouvez accéder à ce site et le consulter à des fins personnelles ou informatives. L'extraction automatisée, le téléchargement en masse de contenu ou toute utilisation imposant une charge déraisonnable sur le site est interdite. Ce site ne peut pas être utilisé pour usurper mon identité ou déformer mon travail."
+      },
+      "ip": {
+        "heading": "Propriété intellectuelle",
+        "comment": "// titularité du contenu",
+        "body": "Tous les textes, descriptions de projets et éléments de design de ce site sont © Yael Demers. Le code source est disponible sur GitHub et est soumis à la licence de ce dépôt. La reproduction du contenu sans attribution n'est pas autorisée."
+      },
+      "disclaimers": {
+        "heading": "Avis de non-responsabilité",
+        "comment": "// sans garanties",
+        "body": "Ce site est fourni tel quel, sans garantie d'aucune sorte. La section consultation décrit des services offerts à titre informatif uniquement et ne constitue pas un conseil professionnel, juridique ou réglementaire. Je me réserve le droit de modifier ou retirer du contenu à tout moment."
+      },
+      "contact": {
+        "heading": "Contact",
+        "comment": "// questions sur ces conditions",
+        "body": "Pour toute question concernant ces conditions, vous pouvez me joindre via la section contact de la page d'accueil."
+      }
+    },
+    "privacy": {
+      "backToHome": "Retour à l'accueil",
+      "title": "Politique de confidentialité",
+      "updated": "Dernière mise à jour : avril 2026",
+      "nav": {
+        "overview": "Aperçu",
+        "data": "Collecte de données",
+        "cookies": "Stockage local",
+        "thirdParty": "Liens externes",
+        "contact": "Contact"
+      },
+      "overview": {
+        "heading": "Aperçu",
+        "comment": "// traitement de vos données",
+        "body": "yaeldemers.com est un site statique sans serveur. Aucune donnée personnelle n'est collectée, stockée ou transmise par ce site. Il n'y a ni suivi analytique, ni publicité, ni formulaire de contact qui conserve les soumissions."
+      },
+      "data": {
+        "heading": "Collecte de données",
+        "comment": "// ce qui est et n'est pas collecté",
+        "body": "Ce site ne collecte aucune information personnellement identifiable. Il n'y a pas de cookies, pas de pixels de suivi et pas de comptes utilisateurs. Des journaux d'accès standard peuvent être conservés par l'hébergeur (GitHub Pages) selon leur propre politique de confidentialité."
+      },
+      "cookies": {
+        "heading": "Stockage local",
+        "comment": "// préférences du navigateur uniquement",
+        "body": "Ce site enregistre deux valeurs dans le stockage local de votre navigateur : votre thème de couleur préféré (clair ou sombre) et votre langue préférée (anglais ou français). Ces valeurs restent sur votre appareil et ne sont jamais transmises. Vous pouvez les effacer à tout moment via les paramètres de votre navigateur."
+      },
+      "thirdParty": {
+        "heading": "Liens externes",
+        "comment": "// liens sortants",
+        "body": "Ce site contient des liens vers des services externes dont GitHub, LinkedIn et Enda Technologies. Une fois que vous quittez ce site, leurs politiques de confidentialité respectives s'appliquent. Je n'ai aucun contrôle sur ces sites et décline toute responsabilité quant à leurs pratiques."
+      },
+      "contact": {
+        "heading": "Contact",
+        "comment": "// questions sur la confidentialité",
+        "body": "Pour toute question relative à cette politique de confidentialité, veuillez utiliser la section contact de la page d'accueil."
+      }
     }
   }
 }
