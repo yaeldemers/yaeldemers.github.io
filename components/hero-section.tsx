@@ -66,7 +66,7 @@ export default function HeroSection() {
           tabIndex={0}
           role="button"
           aria-label={collapsed ? t.hero.clickToReset : "Click for animation: Hello, world!"}
-          title="Click me!"
+          title={t.hero.clickMe}
         >
           {text.split("").map((letter, i) => {
             const isCollapsed = letterStates.includes(i)
@@ -104,6 +104,7 @@ export default function HeroSection() {
               </span>
             )
           })}
+          {/* eslint-disable-next-line i18next/no-literal-string -- animated greeting is intentionally the same in all languages */}
           <span className="sr-only">Hello, world!</span>
         </h1>
 

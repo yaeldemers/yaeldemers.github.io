@@ -324,7 +324,7 @@ export default function Navigation() {
               aria-label={!mounted ? "Toggle theme" : isDark ? "Switch to light mode" : "Switch to dark mode"}
             >
               {!mounted ? (
-                <span className="sr-only">Toggle theme</span>
+                <span className="sr-only">{t.nav.toggleTheme}</span>
               ) : isDark ? (
                 <Sun
                   size={18}

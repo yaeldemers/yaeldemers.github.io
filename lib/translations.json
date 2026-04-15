@@ -5,7 +5,8 @@
       "projects": "Projects",
       "research": "Research",
       "consulting": "Consulting",
-      "contact": "Contact"
+      "contact": "Contact",
+      "toggleTheme": "Toggle theme"
     },
     "hero": {
       "portfolio": "Portfolio",
@@ -13,6 +14,7 @@
       "subtitle": "YAEL DEMERS",
       "role": "Software dev & researcher",
       "clickToReset": "(click to reset)",
+      "clickMe": "Click me!",
       "scroll": "Scroll"
     },
     "about": {
@@ -114,7 +116,8 @@
       "projects": "Projets",
       "research": "Recherche",
       "consulting": "Consultation",
-      "contact": "Contact"
+      "contact": "Contact",
+      "toggleTheme": "Basculer le thème"
     },
     "hero": {
       "portfolio": "Portfolio",
@@ -122,6 +125,7 @@
       "subtitle": "YAEL DEMERS",
       "role": "Développeur & Chercheur",
       "clickToReset": "(cliquer pour réinitialiser)",
+      "clickMe": "Cliquez ici !",
       "scroll": "Défiler"
     },
     "about": {
