@@ -194,7 +194,7 @@ export default function Navigation({ sections }: NavigationProps = {}) {
                     }}
                   >
                     <span
-                      className={`font-mono tracking-wide text-sm transition-colors ${
+                      className={`font-mono tracking-wide text-sm transition-colors text-right ${
                         isActive ? "text-retro-sky font-medium" : "text-foreground/60"
                       }`}
                     >
@@ -369,14 +369,14 @@ export default function Navigation({ sections }: NavigationProps = {}) {
 
           <div className="absolute top-2 left-1/2 -translate-x-1/2 w-8 h-0.5 rounded-full bg-retro-slate/30 dark:bg-retro-sky/30" />
 
-          <div className="flex items-center justify-center gap-8 w-full max-w-xs">
+          <div className="grid grid-cols-3 items-center w-full max-w-xs">
             {mobileDisplayItems.map((item) => {
               const isActive = item.position === "current"
               return (
                 <button
                   key={item.key}
                   onClick={() => scrollToSection(item.id)}
-                  className="flex flex-col items-center gap-1 min-w-[70px] transition-all duration-300"
+                  className="flex flex-col items-center gap-1 transition-all duration-300"
                   style={{ opacity: isActive ? 1 : 0.4, transform: `scale(${isActive ? 1.05 : 0.9})` }}
                 >
                   <span
