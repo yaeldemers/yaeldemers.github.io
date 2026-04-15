@@ -66,7 +66,7 @@ export default function Navigation({ sections }: NavigationProps = {}) {
     return idx === -1 ? 0 : idx
   }, [activeSection, navItems])
 
-  const [isVisible, setIsVisible] = useState(false)
+  const [isVisible, setIsVisible] = useState(!isHomePage)
   const [isHoveringTheme, setIsHoveringTheme] = useState(false)
   const [isAnimatingTheme, setIsAnimatingTheme] = useState(false)
 
@@ -92,6 +92,7 @@ export default function Navigation({ sections }: NavigationProps = {}) {
   }, [activeIndex])
 
   useEffect(() => {
+    if (!isHomePage) return // sub-pages always show the nav
     const onScroll = () => {
       // Hide nav until user scrolls past most of the hero.
       const heroHeight = window.innerHeight * 0.8
@@ -100,7 +101,7 @@ export default function Navigation({ sections }: NavigationProps = {}) {
     onScroll()
     window.addEventListener("scroll", onScroll, { passive: true })
     return () => window.removeEventListener("scroll", onScroll)
-  }, [])
+  }, [isHomePage])
 
   const isDark = mounted && resolvedTheme === "dark"
   const toggleTheme = () => {
