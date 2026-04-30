@@ -102,7 +102,7 @@ export default function ContactSection() {
                   if (email) window.location.href = `mailto:${email}`
                 }}
                 disabled={!email}
-                className="inline-block font-sans text-2xl md:text-3xl font-semibold mb-4 text-foreground hover:text-retro-sky transition-colors duration-300 disabled:opacity-0"
+                className="inline-block font-sans text-base sm:text-2xl md:text-3xl font-semibold mb-4 text-foreground hover:text-retro-sky transition-colors duration-300 disabled:opacity-0"
               >
                 {email}
               </button>

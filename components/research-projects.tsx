@@ -4,6 +4,7 @@ import { useEffect, useRef, useState } from "react"
 import { ExternalLink, BookOpen, Beaker } from "lucide-react"
 import { Github } from "@/components/brand-icons"
 import { useLanguage } from "@/lib/language-context"
+import { Tooltip } from "@/components/tooltip"
 import { getStatusStyles } from "@/lib/utils"
 
 const paperIcons = [Beaker, BookOpen]
@@ -135,16 +136,18 @@ export default function ResearchProjects() {
                         </a>
                       )}
 
-                      <a
-                        href="#contact"
-                        className="flex items-center gap-2 px-4 py-2 rounded-full border border-border 
-                            hover:border-retro-sky hover:bg-retro-sky/10 hover:text-retro-sky text-foreground/60 
-                            text-sm transition-all duration-300"
-                        aria-label={`Contact about: ${paper.title}`}
-                      >
-                        <span>{t.research.readPaper}</span>
-                        <ExternalLink size={14} aria-hidden="true" />
-                      </a>
+                      <Tooltip text={t.projects.publicSoon}>
+                        <a
+                          href="#contact"
+                          className="flex items-center gap-2 px-4 py-2 rounded-full border border-border
+                              hover:border-retro-sky hover:bg-retro-sky/10 hover:text-retro-sky text-foreground/60
+                              text-sm transition-all duration-300"
+                          aria-label={`Contact about: ${paper.title}`}
+                        >
+                          <span>{t.research.readPaper}</span>
+                          <ExternalLink size={14} aria-hidden="true" />
+                        </a>
+                      </Tooltip>
                     </div>
                   </div>
 

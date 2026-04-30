@@ -37,21 +37,25 @@
       "comment": "// some projects I've worked on lately",
       "code": "Code",
       "demo": "Demo",
+      "learnMore": "Learn more",
+      "publicSoon": "Public soon!",
       "otherProjects": "Other projects",
       "featured": {
         "title": "Enda Technologies — Health AI Platform",
         "description": "AI-driven clinical tools operating in a regulated health environment. As CISO and cofounder, I lead security, privacy, and compliance strategy while contributing directly to backend and platform development. This work shapes my approach to engineering trust as a first-class system property.",
         "status": "In production",
-        "year": "2025"
+        "year": "2026"
       },
       "other": [
         {
-          "title": "Some project title #1",
-          "year": "0000"
+          "title": "Scientific Evidence Retrieval Lab",
+          "year": "2026",
+          "github": "https://github.com/yaeldemers/scifact-evidence-retrieval"
         },
         {
-          "title": "Some project title #2",
-          "year": "0000"
+          "title": "Interpretable Vision Systems Lab",
+          "year": "2026",
+          "github": "https://github.com/yaeldemers/CIFAR-Image-Classification"
         }
       ]
     },
@@ -225,21 +229,25 @@
       "comment": "// quelques projets sur lesquels j'ai travaillé",
       "code": "Code",
       "demo": "Démo",
+      "learnMore": "En savoir plus",
+      "publicSoon": "Bientôt public !",
       "otherProjects": "Autres projets",
       "featured": {
         "title": "Enda Technologies — Plateforme d’IA en santé",
         "description": "Outils cliniques propulsés par l’IA, déployés dans un environnement réglementé. À titre de CISO et cofondateur, je dirige les pratiques de sécurité, de vie privée et de conformité, tout en contribuant au développement backend et plateforme.",
         "status": "En production",
-        "year": "2025"
+        "year": "2026"
       },
       "other": [
         {
-          "title": "Titre de projet exemple #1",
-          "year": "0000"
+          "title": "Laboratoire de récupération d'évidence scientifique",
+          "year": "2026",
+          "github": "https://github.com/yaeldemers/scifact-evidence-retrieval"
         },
         {
-          "title": "Titre de projet exemple #2",
-          "year": "0000"
+          "title": "Laboratoire de systèmes de vision interprétables",
+          "year": "2026",
+          "github": "https://github.com/yaeldemers/CIFAR-Image-Classification"
         }
       ]
     },

@@ -1,15 +1,16 @@
 "use client"
 
 import { useEffect, useRef, useState } from "react"
-import { ExternalLink, ArrowRight } from "lucide-react"
+import { ArrowRight } from "lucide-react"
 import { Github } from "@/components/brand-icons"
 import { useLanguage } from "@/lib/language-context"
+import { Tooltip } from "@/components/tooltip"
 
 const projectTech = {
   featured: ["Artificial Intelligence (AI)", "Healthcare Productivity", "Automation", "SaaS"],
   other: [
-    ["", "", "", ""],
-    ["", "", "", ""],
+    ["Scifact", "Semantic Search", "RAG", "NLP"],
+    ["CIFAR", "CNN", "Image segmentation", "ML interpretability"],
   ],
 }
 
@@ -146,13 +147,12 @@ export default function TechnicalProjects() {
         </article>
 
         {/* Other projects */}
-        {/*
         <div className="space-y-4" role="list" aria-label="Other projects">
           <p className="text-foreground/40 text-sm font-mono mb-4">{t.projects.otherProjects}</p>
           {t.projects.other.map((project, index) => (
             <article
               key={project.title}
-              className={`group flex flex-col sm:flex-row sm:items-center justify-between gap-4 py-4 px-5 
+              className={`group flex flex-col sm:flex-row sm:items-center justify-between gap-4 py-4 px-5
                 rounded-xl border border-border/50 hover:border-retro-sky/30 hover:bg-retro-sky/5
                 transition-all duration-300 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}
               style={{ transitionDelay: `${400 + index * 100}ms` }}
@@ -167,32 +167,45 @@ export default function TechnicalProjects() {
                 </h3>
               </div>
               <div className="flex items-center gap-3">
-                <ul className="flex gap-2" aria-label={`Technologies for ${project.title}`}>
-                  {projectTech.other[index]?.slice(0, 3).map((tech) => (
-                    <li key={tech} className="text-xs text-foreground/40">
+                <ul className="flex flex-wrap gap-2 flex-1 min-w-0" aria-label={`Technologies for ${project.title}`}>
+                  {projectTech.other[index]?.map((tech) => (
+                    <li key={tech} className="text-xs text-foreground/40 whitespace-nowrap">
                       {tech}
                     </li>
                   ))}
                 </ul>
-                <a
-                  href="#"
-                  className="text-foreground/40 hover:text-retro-sky transition-colors"
-                  aria-label={`View source code for ${project.title}`}
-                >
-                  <Github size={16} aria-hidden="true" />
-                </a>
-                <a
-                  href="#"
-                  className="text-foreground/40 hover:text-retro-sky transition-colors"
-                  aria-label={`View live demo of ${project.title}`}
-                >
-                  <ExternalLink size={16} aria-hidden="true" />
-                </a>
+                {project.github &&
+                  (index !== 1 ? (
+                    <a
+                      href={project.github}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex shrink-0 items-center gap-2 px-4 py-2 rounded-full border border-border
+                        hover:border-retro-sky hover:bg-retro-sky/10 hover:text-retro-sky text-foreground/60
+                        text-sm transition-all duration-300 whitespace-nowrap"
+                      aria-label={`View source code for ${project.title}`}
+                    >
+                      <span>{t.projects.learnMore}</span>
+                      <Github size={16} aria-hidden="true" />
+                    </a>
+                  ) : (
+                    <Tooltip text={t.projects.publicSoon}>
+                      <a
+                        href="#contact"
+                        className="flex shrink-0 items-center gap-2 px-4 py-2 rounded-full border border-border/50
+                          hover:border-retro-sky/40 hover:bg-retro-sky/5 hover:text-retro-sky/60 text-foreground/30
+                          text-sm transition-all duration-300 whitespace-nowrap"
+                        aria-label={`${project.title} — ${t.projects.publicSoon}`}
+                      >
+                        <span>{t.projects.learnMore}</span>
+                        <Github size={16} aria-hidden="true" />
+                      </a>
+                    </Tooltip>
+                  ))}
               </div>
             </article>
           ))}
-        </div>  
-        */}
+        </div>
       </div>
     </section>
   )

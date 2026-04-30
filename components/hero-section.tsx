@@ -3,6 +3,7 @@
 import { useState, useCallback } from "react"
 import { ChevronDown } from "lucide-react"
 import { useLanguage } from "@/lib/language-context"
+import { Tooltip } from "@/components/tooltip"
 
 export default function HeroSection() {
   const { t } = useLanguage()
@@ -54,59 +55,60 @@ export default function HeroSection() {
           {t.hero.portfolio}
         </p>
 
-        <h1
-          className="font-sans text-foreground text-4xl md:text-5xl lg:text-6xl font-bold mb-4 tracking-tight cursor-pointer select-none"
-          onClick={handleTextClick}
-          onKeyDown={(e) => {
-            if (e.key === "Enter" || e.key === " ") {
-              e.preventDefault()
-              handleTextClick()
-            }
-          }}
-          tabIndex={0}
-          role="button"
-          aria-label={collapsed ? t.hero.clickToReset : "Click for animation: Hello, world!"}
-          title={t.hero.clickMe}
-        >
-          {text.split("").map((letter, i) => {
-            const isCollapsed = letterStates.includes(i)
-            const isExclamation = i === exclamationIndex
-            const leanAngle = 15 + i * 0.5
-
-            let rotation = 0
-            if (isCollapsed) {
-              if (isExclamation && exclamationFallen) {
-                rotation = 90
-              } else {
-                rotation = leanAngle
+        <Tooltip text={t.hero.clickMe}>
+          <h1
+            className="font-sans text-foreground text-4xl md:text-5xl lg:text-6xl font-bold mb-4 tracking-tight cursor-pointer select-none"
+            onClick={handleTextClick}
+            onKeyDown={(e) => {
+              if (e.key === "Enter" || e.key === " ") {
+                e.preventDefault()
+                handleTextClick()
               }
-            }
+            }}
+            tabIndex={0}
+            role="button"
+            aria-label={collapsed ? t.hero.clickToReset : "Click for animation: Hello, world!"}
+          >
+            {text.split("").map((letter, i) => {
+              const isCollapsed = letterStates.includes(i)
+              const isExclamation = i === exclamationIndex
+              const leanAngle = 15 + i * 0.5
 
-            return (
-              <span
-                key={i}
-                className="inline-block transition-all"
-                style={{
-                  transformOrigin: isExclamation ? "bottom center" : "bottom left",
-                  transitionDuration: isExclamation && exclamationFallen ? "400ms" : isCollapsed ? "600ms" : "400ms",
-                  transitionTimingFunction:
-                    isExclamation && exclamationFallen
-                      ? "cubic-bezier(0.25, 0.46, 0.45, 0.94)"
-                      : isCollapsed
-                        ? "cubic-bezier(0.68, -0.55, 0.265, 1.55)"
-                        : "ease-out",
-                  transform: `rotate(${rotation}deg)`,
-                  opacity: 1,
-                }}
-                aria-hidden="true"
-              >
-                {letter === " " ? "\u00A0" : letter}
-              </span>
-            )
-          })}
-          {/* eslint-disable-next-line i18next/no-literal-string -- animated greeting is intentionally the same in all languages */}
-          <span className="sr-only">Hello, world!</span>
-        </h1>
+              let rotation = 0
+              if (isCollapsed) {
+                if (isExclamation && exclamationFallen) {
+                  rotation = 90
+                } else {
+                  rotation = leanAngle
+                }
+              }
+
+              return (
+                <span
+                  key={i}
+                  className="inline-block transition-all"
+                  style={{
+                    transformOrigin: isExclamation ? "bottom center" : "bottom left",
+                    transitionDuration: isExclamation && exclamationFallen ? "400ms" : isCollapsed ? "600ms" : "400ms",
+                    transitionTimingFunction:
+                      isExclamation && exclamationFallen
+                        ? "cubic-bezier(0.25, 0.46, 0.45, 0.94)"
+                        : isCollapsed
+                          ? "cubic-bezier(0.68, -0.55, 0.265, 1.55)"
+                          : "ease-out",
+                    transform: `rotate(${rotation}deg)`,
+                    opacity: 1,
+                  }}
+                  aria-hidden="true"
+                >
+                  {letter === " " ? "\u00A0" : letter}
+                </span>
+              )
+            })}
+            {/* eslint-disable-next-line i18next/no-literal-string -- animated greeting is intentionally the same in all languages */}
+            <span className="sr-only">Hello, world!</span>
+          </h1>
+        </Tooltip>
 
         <div className="flex items-center justify-center gap-4 mb-8" aria-hidden="true">
           <div className="h-px w-12 bg-retro-slate/30 dark:bg-retro-sky/30" />
