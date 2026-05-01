@@ -2,6 +2,22 @@
 
 import { useEffect, useRef, useState } from "react"
 
+type SectionBounds = { id: string; offsetTop: number; offsetHeight: number }
+
+/**
+ * Pure helper: returns the id of the first section whose bounds contain `scrollY + offsetPx`,
+ * or null if none match.
+ */
+export function findActiveSection(elements: SectionBounds[], scrollY: number, offsetPx: number): string | null {
+  const y = scrollY + offsetPx
+  for (const el of elements) {
+    const top = el.offsetTop
+    const bottom = top + el.offsetHeight
+    if (y >= top && y < bottom) return el.id
+  }
+  return null
+}
+
 /**
  * Tracks which section is currently active based on scroll position.
  *
@@ -18,19 +34,8 @@ export function useActiveSection(sectionIds: readonly string[], offsetPx = 160) 
     if (elements.length === 0) return
 
     const onScroll = () => {
-      const y = window.scrollY + offsetPx
-      let current = activeRef.current
-
-      for (const el of elements) {
-        const top = el.offsetTop
-        const bottom = top + el.offsetHeight
-        if (y >= top && y < bottom) {
-          current = el.id
-          break
-        }
-      }
-
-      if (current !== activeRef.current) setActiveSection(current)
+      const matched = findActiveSection(elements, window.scrollY, offsetPx)
+      if (matched !== null && matched !== activeRef.current) setActiveSection(matched)
     }
 
     onScroll()
