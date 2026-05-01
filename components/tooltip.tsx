@@ -10,7 +10,7 @@ export function Tooltip({ text, children }: TooltipProps) {
       <span
         className="pointer-events-none absolute bottom-full left-1/2 -translate-x-1/2 mb-2
           px-2 py-1 text-xs bg-background border border-border rounded-md text-foreground/60
-          whitespace-nowrap opacity-0 group-hover/tooltip:opacity-100 transition-opacity duration-200"
+          whitespace-nowrap opacity-0 group-hover/tooltip:opacity-100 transition-opacity duration-200 delay-0 group-hover/tooltip:delay-500"
       >
         {text}
       </span>
