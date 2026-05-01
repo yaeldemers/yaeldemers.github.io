@@ -169,7 +169,7 @@ export default function Navigation({ sections }: NavigationProps = {}) {
             className="relative overflow-hidden"
             style={{
               height: containerHeight,
-              width: 120,
+              width: 128,
               maskImage: "linear-gradient(to bottom, transparent, black 35%, black 65%, transparent)",
               WebkitMaskImage: "linear-gradient(to bottom, transparent, black 35%, black 65%, transparent)",
             }}
