@@ -3,6 +3,7 @@
 import { useState, useRef, useEffect } from "react"
 import { ArrowUp } from "lucide-react"
 import { Github, Linkedin } from "@/components/brand-icons"
+import { Tooltip } from "@/components/tooltip"
 import Image from "next/image"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
@@ -123,25 +124,26 @@ export default function Footer() {
 
         <div className="flex items-center gap-4 mb-8">
           <div className="flex-1 h-px bg-gradient-to-r from-transparent via-border to-transparent" />
-          <button
-            onClick={handleShipClick}
-            className="relative w-12 h-8 hover:scale-110 transition-transform duration-300 cursor-pointer"
-            aria-label="Click for a random Cowboy Bebop quote"
-            title={t.footer.shipTooltip}
-          >
-            {mounted && (
-              <Image
-                src={
-                  resolvedTheme === "dark"
-                    ? "/images/swordfish-ii-outline-thick-white.png"
-                    : "/images/swordfish-ii-outline-thick.png"
-                }
-                alt="Swordfish II spaceship from Cowboy Bebop"
-                fill
-                className="object-contain opacity-70 hover:opacity-100 transition-opacity"
-              />
-            )}
-          </button>
+          <Tooltip text={t.footer.shipTooltip}>
+            <button
+              onClick={handleShipClick}
+              className="relative w-12 h-8 hover:scale-110 transition-transform duration-300 cursor-pointer"
+              aria-label="Click for a random Cowboy Bebop quote"
+            >
+              {mounted && (
+                <Image
+                  src={
+                    resolvedTheme === "dark"
+                      ? "/images/swordfish-ii-outline-thick-white.png"
+                      : "/images/swordfish-ii-outline-thick.png"
+                  }
+                  alt="Swordfish II spaceship from Cowboy Bebop"
+                  fill
+                  className="object-contain opacity-70 hover:opacity-100 transition-opacity"
+                />
+              )}
+            </button>
+          </Tooltip>
           <div className="flex-1 h-px bg-gradient-to-r from-transparent via-border to-transparent" />
         </div>
 
