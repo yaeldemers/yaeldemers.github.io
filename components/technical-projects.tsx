@@ -9,7 +9,7 @@ import { Tooltip } from "@/components/tooltip"
 const projectTech = {
   featured: ["Artificial Intelligence (AI)", "Healthcare Productivity", "Automation", "SaaS"],
   other: [
-    ["Scifact", "Semantic Search", "RAG", "NLP"],
+    ["Scifact", "Semantic search", "RAG", "NLP"],
     ["CIFAR", "CNN", "Image segmentation", "ML interpretability"],
   ],
 }
